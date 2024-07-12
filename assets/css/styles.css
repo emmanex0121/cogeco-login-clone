@@ -1145,4 +1145,7 @@ button {
   .menu-bottom-link {
     flex: 1 1 300px;
   }
+  .menu-faq {
+    margin-left: initial;
+  }
 }
