@@ -25,7 +25,8 @@ function isActive() {
   }
 }
 
-function provDropDown() {
+function provDropDown(event) {
+  event.stopPropagation();
   const province = document.querySelector(
     ".container_province .drop-menu-list"
   );
@@ -43,7 +44,8 @@ function provDropDown() {
   }
 }
 
-function langDropDown() {
+function langDropDown(event) {
+  event.stopPropagation();
   const province = document.querySelector(
     ".container_province .drop-menu-list"
   );
@@ -60,6 +62,27 @@ function langDropDown() {
     // province.style.display = "none";
   }
 }
+
+function removeDropDowns(event) {
+  const province = document.querySelector(
+    ".container_province .drop-menu-list"
+  );
+  const language = document.querySelector(
+    ".container_language .drop-menu-list"
+  );
+  const languageDisplay = window.getComputedStyle(language).display;
+  const provinceDisplay = window.getComputedStyle(province).display;
+  console.log(provinceDisplay);
+
+  if (languageDisplay !== "none") {
+    province.style.display = "none";
+  }
+  if (provinceDisplay !== "none") {
+    language.style.display = "none";
+  }
+}
+
+document.addEventListener("click", removeDropDowns);
 
 function arrowUp(element) {
   const arrow = element.querySelector(".drop_down-arrow");

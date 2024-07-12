@@ -25,7 +25,7 @@
               <div class="nav_top-right-drop-menu">
                 <div
                   class="container_province"
-                  onclick="provDropDown(); arrowUp(this);">
+                  onclick="provDropDown(event); arrowUp(this);">
                   <div class="drop_menu-text-arrow">
                     <span>Ontario</span>
                     <svg
@@ -53,7 +53,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="container_language" onclick="langDropDown()">
+                <div class="container_language" onclick="langDropDown(event)">
                   <div class="drop_menu-text-arrow">
                     <span>EN</span>
                     <svg
