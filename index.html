@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in to Webmail | Cogenco</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="section_nav">
+      <div class="navbar">
+        <div class="nav_top-container">
+          <div class="nav-top">
+            <div class="nav_top-left">
+              <a href="" class="nav_top-link">Residential</a>
+              <a href="" class="nav_top-link">Bussiness</a>
+              <a href="" class="nav_top-link">Careers</a>
+            </div>
+            <div class="nav_top-right">
+              <div class="nav_top-right-links">
+                <a href="" class="nav_top-link">My Account</a>
+                <a href="" class="nav_top-link">Webmail</a>
+                <a href="" class="nav_top-link">Contact Us</a>
+              </div>
+              <div class="nav_top-right-drop-menu">
+                <div class="container_province">
+                  <div class="drop_menu-text-arrow">
+                    <span>Ontario</span>
+                    <svg
+                      class="drop_down-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      fill="none"
+                      viewBox="0 0 16 16">
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.2"
+                        d="m4 6.5 4 4 4-4"></path>
+                    </svg>
+                  </div>
+                  <ul class="drop-menu-list">
+                    <li class="drop-menu-text">Select a province</li>
+                    <li class="drop-menu-item province">
+                      <span id="province">Ontario</span>
+                    </li>
+                    <li class="drop-menu-item">
+                      <span id="province">Quebec</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="container_language">
+                  <div class="drop_menu-text-arrow">
+                    <span>EN</span>
+                    <svg
+                      class="drop_down-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      fill="none"
+                      viewBox="0 0 16 16">
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.2"
+                        d="m4 6.5 4 4 4-4"></path>
+                    </svg>
+                  </div>
+                  <ul class="drop-menu-list">
+                    <li class="drop-menu-text">Select a language</li>
+                    <li class="drop-menu-item lang">
+                      <span id="lang">EN</span>
+                    </li>
+                    <li class="drop-menu-item"><span id="lang">FR</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_bottom-container">
+          <div class="nav-bottom">
+            <div class="nav_bottom-left">
+              <a href="#" class="cogenco_home-link">
+                <img
+                  width="168"
+                  height="31"
+                  src="assets/images/logo-cogeco-blue.svg"
+                  alt="" />
+              </a>
+            </div>
+            <div class="nav_bottom-center">
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">Internet</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">TV</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">Promos</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">About Us</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link" id="support"
+                  >Support</a
+                >
+              </div>
+              <!-- <a href="#" class="nav_bottom-center-link">TV</a>
+                  <a href="#" class="nav_bottom-center-link">Promos</a>
+                  <a href="#" class="nav_bottom-center-link">About Us</a>
+                  <a href="#" class="nav_bottom-center-link" id="support">Support</a> -->
+            </div>
+            <div class="nav_bottom-right">
+              <button class="nav_bottom-right-button">
+                <span>0</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M6 14.667a.667.667 0 1 0 0-1.334.667.667 0 0 0 0 1.334M13.333 14.667a.667.667 0 1 0 0-1.334.667.667 0 0 0 0 1.334M.667.667h2.666L5.12 9.593a1.33 1.33 0 0 0 1.333 1.074h6.48a1.334 1.334 0 0 0 1.334-1.074L15.333 4H4"></path>
+                </svg>
+              </button>
+              <button class="nav_bottom-right-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667M14 14l-2.9-2.9"></path>
+                </svg>
+              </button>
+              <button class="nav_bottom-right-button menu_button">
+                <svg
+                  id="menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M2 8h12M2 4h12M2 12h12"></path>
+                </svg>
+                <svg
+                  id="close-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="m12 4-8 8M4 4l8 8"></path>
+                </svg>
+              </button>
+              <a href="" class="nav_contact">1-866-261-4447</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile menu content -->
+    <nav class="menu-nav">
+      <div class="back-section">
+        <svg
+          id="close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          fill="none"
+          viewBox="0 0 16 16">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.2"
+            d="M12.667 8H3.333M8 12.667 3.333 8 8 3.333"></path>
+        </svg>
+        <span>Back</span>
+      </div>
+      <div class="menu-center-section">
+        <div class="menu-links">
+          <a href="" class="menu-link">Internet</a>
+          <a href="" class="menu-link">EPICO</a>
+          <a href="" class="menu-link">Standard TV</a>
+          <a href="" class="menu-link">Home Phone</a>
+          <a href="" class="menu-link">Billing and account</a>
+          <a href="" class="menu-link">Self-install</a>
+          <a href="" class="menu-link">Speed test tool</a>
+          <a href="" class="menu-link">MOving soon?</a>
+          <a href="" class="menu-link">Log in to My Account</a>
+          <a href="" class="menu-link active">Log in to Webmail</a>
+          <a href="" class="menu-link">Outages</a>
+          <a href="" class="menu-link">Contact Us</a>
+        </div>
+        <div class="menu-faq">
+          <h3>Find answers to your questions</h3>
+          <p>Get answers to all the most frequently asked questions.</p>
+          <div class="faq-link">
+            <a href="#">
+              <span>See all FAQs</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="none"
+                viewBox="0 0 16 16">
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.2"
+                  d="M3.333 8h9.334M8 3.333 12.667 8 8 12.667"></path>
+              </svg>
+            </a>
+            <!-- <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="none"
+              viewBox="0 0 16 16">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+                d="M3.333 8h9.334M8 3.333 12.667 8 8 12.667"></path>
+            </svg> -->
+          </div>
+        </div>
+      </div>
+      <div class="menu-footer-section">
+        <div class="menu-bottom-links">
+          <a href="" class="menu-bottom-link">My Account</a>
+          <a href="" class="menu-bottom-link">Webmail</a>
+          <a href="" class="menu-bottom-link">Contact us</a>
+        </div>
+        <div class="menu-drop-down">
+          <div class="menu-location-container">
+            <span>Ontario</span>
+            <svg
+              class="drop_down-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="none"
+              viewBox="0 0 16 16">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+                d="m4 6.5 4 4 4-4"></path>
+            </svg>
+          </div>
+          <div class="menu-language-container">
+            <span>EN</span>
+            <svg
+              class="drop_down-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="none"
+              viewBox="0 0 16 16">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.2"
+                d="m4 6.5 4 4 4-4"></path>
+            </svg>
+          </div>
+          <div class="menu-phone"><span>1-866-261-4447</span></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="section_content">
+      <div class="container_content">
+        <div class="container_content-form">
+          <form class="content_form" action="">
+            <h1>
+              Welcome to Cogeco Webmail. <span>Great to see you again.</span>
+            </h1>
+            <!-- <h1>Great to see you again.</h1> -->
+            <div class="email_section">
+              <label for="email">Email Address</label>
+              <input type="email" placeholder="your.email@cogeco.ca" />
+              <p id="error-msg">Please enter a valid email address</p>
+            </div>
+            <div class="password_section">
+              <label for="text">Password</label>
+              <input type="password" />
+              <p id="error-msg">The password is required</p>
+            </div>
+            <div class="container_form-reminder">
+              <div class="container_email-checkbox">
+                <input name="checkbox" type="checkbox" />
+                <label for="checkbox">Remember my email address</label>
+              </div>
+              <div class="container_forget-pass">
+                <a href="#" class="forget_pass"
+                  >Forget your password or email?</a
+                >
+              </div>
+            </div>
+            <div class="form_button">
+              <button class="button_sign-in" type="button">Sign in</button>
+            </div>
+          </form>
+        </div>
+        <div class="content_info">
+          <img
+            class="curve_image-top"
+            width="144"
+            height="80"
+            src="assets/images/promo-block-video-top-bg.webp"
+            alt="" />
+          <div class="icon_profile">
+            <span class="icon_profile-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="none"
+                viewBox="0 0 38 38"
+                color="#001E62"
+                font-size="38">
+                <path
+                  fill="#001E62"
+                  d="M22.709 20.36a6.29 6.29 0 1 0-7.42 0 9.32 9.32 0 0 0-5.57 7.52 1 1 0 0 0 1.279 1.085 1 1 0 0 0 .71-.855 7.34 7.34 0 0 1 14.58 0 1 1 0 0 0 1 .89h.11a1 1 0 0 0 .89-1.1 9.33 9.33 0 0 0-5.58-7.54m-8-5.07a4.29 4.29 0 1 1 4.29 4.3 4.3 4.3 0 0 1-4.29-4.3"></path>
+                <path
+                  fill="#FF6D70"
+                  d="M25.91 5.75A1 1 0 0 1 25 4.37q.067-.204.2-.37.149-.134.33-.21a1 1 0 0 1 .76 0 1 1 0 0 1 .33.21q.135.147.21.33a1 1 0 0 1-.92 1.38zM29.91 15.75a1 1 0 0 1-.71-.29 1 1 0 0 1-.29-.71 1.4 1.4 0 0 1 0-.2.6.6 0 0 1 .06-.18.8.8 0 0 1 .09-.18l.14-.19.15-.12a.8.8 0 0 1 .18-.09q.09-.045.19-.06a.93.93 0 0 1 .57.06 1 1 0 0 1 .33.21q.064.072.12.15a.8.8 0 0 1 .09.18q.043.085.06.18.007.1 0 .2a1 1 0 0 1-1 1z"></path>
+                <path
+                  fill="#001E62"
+                  d="M19.001 36a17.002 17.002 0 0 1-.46-34 17.7 17.7 0 0 1 3.41.24 1 1 0 1 1-.34 1.97 15 15 0 0 0-3-.21 15 15 0 1 0 15.2 12.58 1 1 0 0 1 1.211-1.137 1 1 0 0 1 .76.817q.19 1.127.22 2.27A17 17 0 0 1 19.471 36z"></path>
+                <path
+                  fill="#FF6D70"
+                  d="m31.21 4-1.33 2.67L27.21 8l2.67 1.33L31.21 12l1.34-2.67L35.21 8l-2.66-1.33z"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="content_info-text">
+            <h1>Get to know Webmail</h1>
+            <h2>
+              Cogeco Webmail has convenient features, such as seamless
+              navigation between your inbox, calendar and contacts.
+            </h2>
+          </div>
+          <a href="#" class="learn_more">Learn more</a>
+        </div>
+        <img
+          class="curve_image-bottom"
+          decoding="async"
+          width="200"
+          data-nimg="1"
+          src="assets/images/promo-block-video-bottom-bg.webp"
+          alt="" />
+      </div>
+    </div>
+
+    <!-- section offers -->
+    <div class="section_offers">
+      <div class="section_container-offers">
+        <h2>Use Webmain to its full potential</h2>
+        <div class="container_offers">
+          <div class="offer">
+            <div class="offer_icon-container">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 38 38"
+                  color="#001E62"
+                  font-size="38">
+                  <path
+                    fill="#001E62"
+                    d="M33.62 15.35 31 13.08V6a1 1 0 0 0-1-1h-8.32l-2-1.76a1 1 0 0 0-1.3 0L16.32 5H8a1 1 0 0 0-1 1v7.08l-2.62 2.27a4 4 0 0 0-1.38 3V31a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V18.37a4 4 0 0 0-1.38-3.02m-.78 16.44-11.66-6L33 19.64V31c0 .271-.055.54-.16.79m-.53-14.93c.204.176.368.395.48.64l-1.79.93v-2.71zM29 7v12.46l-10 5.17-10-5.17V7zM7 15.72v2.71l-1.79-.93a1.9 1.9 0 0 1 .48-.64zM5 31V19.64L30.82 33H7a2 2 0 0 1-2-2"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M24.358 11a3.9 3.9 0 0 0-1.61-1.53 5.4 5.4 0 0 0-2.53-.56 7.86 7.86 0 0 0-3.61.82 6.3 6.3 0 0 0-2.61 2.27 6.64 6.64 0 0 0-.95 3.55c.003.848.194 1.685.56 2.45a4.3 4.3 0 0 0 1.66 1.83 5.35 5.35 0 0 0 2.83.69 5.6 5.6 0 0 0 1.69-.22 9.4 9.4 0 0 0 1.5-.63c.37-.2.55-.41.55-.65a.45.45 0 0 0 0-.2c-.14-.33-.35-.4-.5-.4a.6.6 0 0 0-.31.1 6.5 6.5 0 0 1-1.3.57 5.8 5.8 0 0 1-1.59.18 4 4 0 0 1-2.14-.53 3.2 3.2 0 0 1-1.23-1.36 4.2 4.2 0 0 1-.39-1.81 5.44 5.44 0 0 1 .77-2.92 5.06 5.06 0 0 1 2.1-1.89 6.8 6.8 0 0 1 3-.65 4.1 4.1 0 0 1 1.81.37 2.83 2.83 0 0 1 1.19 1 2.94 2.94 0 0 1 .41 1.55 5.2 5.2 0 0 1-.26 1.61c-.13.5-.368.964-.7 1.36a1.11 1.11 0 0 1-.85.47.39.39 0 0 1-.31-.13.54.54 0 0 1-.12-.39 1 1 0 0 1 0-.19l.52-3.3a1.5 1.5 0 0 0 0-.23c0-.3-.14-.67-.82-.67a.87.87 0 0 0-.58.18.8.8 0 0 0-.25.44 1.4 1.4 0 0 0-.42-.42 1.56 1.56 0 0 0-.87-.26 2.53 2.53 0 0 0-1.62.62 4.3 4.3 0 0 0-1.18 1.52 4.2 4.2 0 0 0-.44 1.77 2.44 2.44 0 0 0 .29 1.19 2 2 0 0 0 .77.8c.3.185.647.282 1 .28a2.19 2.19 0 0 0 1.91-.92c.105.244.279.453.5.6a1.74 1.74 0 0 0 1 .32 3 3 0 0 0 1.97-.68 4.35 4.35 0 0 0 1.27-1.72 5.7 5.7 0 0 0 .44-2.18 4.25 4.25 0 0 0-.55-2.1m-4.36 2.78c-.018.342-.088.68-.21 1q-.103.347-.3.65c-.129.217-.295.41-.49.57-.2.156-.446.24-.7.24a.74.74 0 0 1-.57-.22 1 1 0 0 1-.21-.68c.004-.386.075-.768.21-1.13.119-.374.32-.715.59-1a1.14 1.14 0 0 1 .82-.38 1 1 0 0 1 .67.21.84.84 0 0 1 .19.74"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="offer_texts">
+              <span>Manage your addresses on My Account</span>
+              <p>
+                Create, edit or delete email accounts and passwords for your
+                Webmail addresses on My Account.
+              </p>
+              <a href="">Log in to My Account</a>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="offer_icon-container">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 38 38"
+                  color="#001E62"
+                  font-size="38">
+                  <path
+                    fill="#001E62"
+                    d="M14.28 30H6a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4h23a4 4 0 0 1 4 4v1a1 1 0 0 1-2 0v-1a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8.28a1 1 0 0 1 0 2M14 33H9a1 1 0 0 1 0-2h5a1 1 0 0 1 0 2"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M13 13H8a1 1 0 0 1 0-2h5a1 1 0 0 1 0 2"></path>
+                  <path
+                    fill="#001E62"
+                    d="M25 33h-4a3 3 0 0 1-3-3V17a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v1a1 1 0 0 1-2 0v-1a1 1 0 0 0-1-1H21a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h4a1 1 0 0 1 0 2"></path>
+                  <path
+                    fill="#001E62"
+                    d="M33 33h-2a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3m-2-10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1z"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M26 20a1 1 0 0 1-.71-.29 1.2 1.2 0 0 1-.21-.33.94.94 0 0 1 0-.76.9.9 0 0 1 .54-.54 1 1 0 0 1 1.09.21q.134.147.21.33a.94.94 0 0 1 0 .76q-.076.183-.21.33A1 1 0 0 1 26 20"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="offer_texts">
+              <span>See how to set up and email on other devices</span>
+              <p>
+                Access your Cogeco email address from other email client
+                software on any device.
+              </p>
+              <a href="">Learn how</a>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="offer_icon-container">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 38 38"
+                  color="#001E62"
+                  font-size="38">
+                  <path
+                    fill="#001E62"
+                    d="M26 36a1 1 0 0 1-.74-.33L22.83 33h-3.12A3.72 3.72 0 0 1 16 29.29v-9.58A3.72 3.72 0 0 1 19.71 16h12.58A3.72 3.72 0 0 1 36 19.71v9.58A3.72 3.72 0 0 1 32.29 33h-3.35l-2.17 2.63A1 1 0 0 1 26 36m-6.29-18A1.72 1.72 0 0 0 18 19.71v9.58A1.72 1.72 0 0 0 19.71 31h3.56a1 1 0 0 1 .74.33L26 33.47l1.73-2.1a1 1 0 0 1 .78-.37h3.82A1.72 1.72 0 0 0 34 29.29v-9.58A1.72 1.72 0 0 0 32.29 18z"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M25.082 24.79a.7.7 0 0 1 .53-.22 2.15 2.15 0 0 0 1.32-.38 1.42 1.42 0 0 0 .49-1.19 1.34 1.34 0 0 0-.42-1 1.57 1.57 0 0 0-1.12-.41 1.72 1.72 0 0 0-1.2.46.93.93 0 0 1-.62.27.64.64 0 0 1-.42-.15.68.68 0 0 1-.09-1.1 3.2 3.2 0 0 1 1-.72 3.4 3.4 0 0 1 1.28-.25 3.1 3.1 0 0 1 1.54.39 2.87 2.87 0 0 1 1.54 2.51 2.58 2.58 0 0 1-.68 1.88 3.2 3.2 0 0 1-1.81.87s-.07 0-.07.06v.46a.76.76 0 0 1-.21.54.72.72 0 0 1-.53.22.73.73 0 0 1-.53-.22.76.76 0 0 1-.21-.54v-.94a.73.73 0 0 1 .21-.54m-.08 4.26a.74.74 0 0 1-.19-.55v-.21a.67.67 0 0 1 .74-.74h.16a.67.67 0 0 1 .74.74v.21a.67.67 0 0 1-.74.74h-.16a.74.74 0 0 1-.55-.19"></path>
+                  <path
+                    fill="#001E62"
+                    d="M13 24a11 11 0 1 1 11-11 1 1 0 0 1-2 0 9 9 0 1 0-9 9 1 1 0 0 1 0 2"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M13 18a1 1 0 0 1-1-1v-5a1 1 0 0 1 2 0v5a1 1 0 0 1-1 1M13 10a1 1 0 0 1-.71-.29 1.2 1.2 0 0 1-.21-.33A1 1 0 0 1 12 9a1.05 1.05 0 0 1 .29-.71 1 1 0 0 1 1.09-.21.9.9 0 0 1 .33.21c.183.192.286.445.29.71-.002.13-.029.26-.08.38a1 1 0 0 1-.21.33A1 1 0 0 1 13 10"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="offer_texts">
+              <span>Get answers to your Webmail questions</span>
+              <p>
+                For answers to all your questions about Webmail and its range of
+                features, visit our FAQs.
+              </p>
+              <a href="">Visit Webmail FAQs</a>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="offer_icon-container">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 38 38"
+                  color="#001E62"
+                  font-size="38">
+                  <path
+                    fill="#001E62"
+                    d="M19.667 36c-.145 0-.289-.03-.42-.09l-.75-.35A22.16 22.16 0 0 1 5.667 15.5V8.92a1 1 0 0 1 .688-.946 1 1 0 0 1 .412-.044q.698.07 1.4.07a14.55 14.55 0 0 0 10.76-4.8 1 1 0 0 1 1.48 0A14.55 14.55 0 0 0 31.167 8q.7 0 1.4-.07a1 1 0 0 1 1.1.99v6.58a22.16 22.16 0 0 1-12.83 20.06l-.75.35c-.132.06-.275.09-.42.09m-12-26v5.5a20.17 20.17 0 0 0 11.67 18.25l.33.15.33-.15a20.17 20.17 0 0 0 11.67-18.25V10h-.5a16.53 16.53 0 0 1-11.5-4.69A16.53 16.53 0 0 1 8.167 10z"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M19.667 26a2 2 0 1 1 0-4 2 2 0 0 1 0 4M15.057 21.42a1 1 0 0 1-.6-.21 1 1 0 0 1-.2-1.4 6.77 6.77 0 0 1 10.82 0 1 1 0 0 1-.2 1.4 1 1 0 0 1-1.4-.19 4.76 4.76 0 0 0-7.62 0 1 1 0 0 1-.8.4"></path>
+                  <path
+                    fill="#FF6D70"
+                    d="M27.446 18.39a1 1 0 0 1-.78-.39 8.72 8.72 0 0 0-14 0 1 1 0 0 1-1.6-1.2 10.72 10.72 0 0 1 17.16 0 1 1 0 0 1-.2 1.4 1 1 0 0 1-.58.19"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="offer_texts">
+              <span>Protect yourself against fraud</span>
+              <p>
+                Learn how to identify fraudulent emails and other ways scammers
+                may try to get your private information.
+              </p>
+              <a href="">Learn about fraud and other scams</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Section Legal Information  -->
+    <section class="legal">
+      <div class="legal_information">
+        <span>Legal information</span>
+        <svg
+          class="drop_down-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          fill="none"
+          viewBox="0 0 16 16">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.2"
+            d="m4 6.5 4 4 4-4"></path>
+        </svg>
+      </div>
+      <div class="container_legal">
+        <div class="container_legal-texts">
+          <h4>General restrictions and legal information</h4>
+          <p>
+            Limited time offer. Restricted to new customers and former customers
+            who cancelled all of their services more than 6 months ago.
+          </p>
+          <p>
+            Our network combines optical fibre and coaxial cable. Available
+            where technology permits. For personal and residential purposes
+            only. Visit cogeco.ca for details. Photos are for illustrative
+            purposes only.
+          </p>
+          <h4 class="install_text">INSTALLATION AND ACTIVATION</h4>
+          <p>
+            An activation fee of $20 will be charged for activation of service.
+          </p>
+          <p>
+            A fee of $130 per technician visit for a standard professional
+            installation will apply. Supplementary installation fees may apply
+            for additional work requested. Pre-authorized debit or credit card
+            payment and service bundling on a single invoice may be required.
+          </p>
+          <p>
+            A termination fee of up to $75 per service will be charged to
+            customers who cancel their services before the end of the offer
+            period. Termination fees not applicable in Quebec.
+          </p>
+          <p>
+            Sign up today at
+            <a href="www.hayu.com/cogeco" target="_blank"
+              >www.hayu.com/cogeco</a
+            >
+          </p>
+          <h4>Internet</h4>
+          <p>
+            Additional charges will apply for exceeding the monthly data
+            transfer capacity (GB) allowed for each specific Cogeco Internet
+            package. <a href="#">See details.</a> Download and upload speeds can
+            vary with Internet traffic, remote peers, the customer&apos;s
+            network configuration, the use of wireless equipment and other
+            factors. <a href="#">See details.</a> All Internet packages include
+            2 free installations of Cogeco Security services for desktop and/or
+            laptop computers. Cogeco Security GO with unlimited installations
+            for computers, tablets and wireless devices is available at a
+            regular price of $5.99/month. <a href="#">See details.</a> Wi-Fi
+            hotspots provide free and unlimited Internet access to Cogeco
+            subscribers and limited access to non-Cogeco subscribers. See
+            details. ULTRAFIBRE&reg;
+          </p>
+          <p>
+            Wi-Fi Pods and Wi-Fi Extenders require a subscription to an
+            UltraFibre 40 Internet package or higher.
+          </p>
+          <p>
+            UltraFibre 1 Gig Unlimited : Up to 1 Gbps of total download speed
+            through the combination of multiple devices including at least one
+            wired connection (Ethernet) combined with one or multiple wireless
+            connections to Cogeco&apos;s 1 Gig modem. Up to 940 Mbps download
+            speed can be achieved when connecting to one personal Internet
+            device with one wired connection (Ethernet).
+          </p>
+          <h4>EPICO</h4>
+          <p>
+            Cogeco EPICO service provides combined access to Cogeco TV and
+            Internet services with a subscription to Cogeco TV, an EPICO 4K Box
+            and a minimum subscription to the UltraFibre 60 Unlimited Internet
+            package with a Wi-Fi modem.
+          </p>
+          <h
+            >Download speed, upload speed, signal and picture quality can vary
+            depending on various factors.</h
+          >
+          <p>
+            Channel availability may vary by region. Selected TV channels can
+            only be modified once every 30 days. The channel lists for the
+            pre-selected packages cannot be modified. Additional fees may apply
+            for some channels and some channels may count for several choices.
+            Viewing content (live or recorded) is restricted to Canada.
+          </p>
+          <p>
+            Channel availability for the Restart and Just Missed features may
+            vary according to the content rights and viewing restrictions.
+          </p>
+          <p>
+            A separate subscription to Netflix® is required. Counts towards
+            customer&apos;s Internet usage.
+          </p>
+          <p>
+            The EPICO app provides access to the TV channels included in the
+            EPICO package to which the customer is subscribed. Some channels
+            included in the EPICO package may not be available to watch
+            out-of-home due to content rights restrictions. Viewing content is
+            restricted to Canada.
+          </p>
+          <p>
+            On Demand requires a subscription to the TV package containing the
+            associated digital channel. Purchased movies remain available as
+            long as the customer is subscribed to the Cogeco EPICO service and
+            as long as the title remains available in the On Demand library.
+            Rented movies are available for the duration indicated on the
+            screen.
+          </p>
+          <p>
+            Beginning March 1st, 2022, all recordings are available for a
+            maximum of 365 days or until the termination of your EPICO service.
+            By default, older recordings will be automatically removed to match
+            the number of hours in your block. Additional blocks of recording
+            hours may be available to add with certain EPICO packages (up to
+            1000 hours of recording capacity).
+          </p>
+          <p>
+            An EPICO package including an EPICO 4K Cloud PVR is required to
+            download and view TV recordings in and out-of-home.
+          </p>
+          <p>
+            One EPICO 4K Cloud PVR per TV set. Each additional EPICO 4K Box or
+            EPICO 4K Cloud PVR is available at $7 per month.
+          </p>
+          <h4>Télévision</h4>
+          <p>
+            Cogeco TV service requires the rental of an HD digital receiver with
+            a minimum subscription to the Basic Channels package. Channel
+            availability may vary by region. TV packages and selected channels
+            can only be modified once every 30 days. Additional fees may apply
+            for some channels and some channels may count for many choices. The
+            channel lists of the pre-selected packages cannot be modified.
+            Requirements to watch 4K: (i) a 4K TV and 4K receiver, (ii) a
+            subscription to the SD/HD channels corresponding to the 4K channels.
+            4K not available with all channels.
+          </p>
+          <p>
+            Access to the mobile apps requires a subscription to the TV package
+            containing the associated digital channel. The content viewed on
+            mobile apps requires bandwidth, which is included in the customer's
+            Internet or cellular data package. Additional usage fees may apply
+            if the customer exceeds the monthly data transfer capacity (GB)
+            included in his package. Viewing content is restricted to Canada.
+          </p>
+          <p>
+            TiVo service from Cogeco requires: (i) the rental of a TiVo
+            receiver, (ii) a Wi-Fi modem, and (iii) a subscription to Cogeco
+            Internet and (iv) a TV package. Each additional TV set combined with
+            a TiVo PVR requires the rental of a TiVo HD receiver. Installation
+            charges may apply for additional outlets. Data traffic consumed
+            between the TiVo boxes and the Internet to supply programming
+            information counts towards customer&apos;s Internet usage.
+            Additional usage fees may apply if the customer exceeds the monthly
+            data transfer capacity (GB) included in the package. Viewing content
+            is restricted to Canada. TiVo®. Apple®. YouTube®.
+          </p>
+          <p>
+            Furiosa: Mad Max &rarr; &copy; 2024 Warner Bros. Ent. All Rights
+            Reserved. Ezra &rarr; &copy;2024 VVS Films. All Rights Reserved.
+            Watchers, The &rarr; &copy; 2024 Warner Bros. Ent. All Rights
+            Reserved.
+          </p>
+          <p>The offer on Crave:</p>
+          <p>New Cx:</p>
+          <p>
+            The offer on Crave expires August 30th, 2024 and includes a monthly
+            saving of $20 for 1 month for new Cogeco TV customers who subscribe
+            to Crave or $25 for 1 month for new Cogeco TV customers subscribed
+            to Crave with Starz. At the end of the period of this offer, the
+            then-current price of the package will apply. The regular price of
+            the package may change at any time, including during the
+            subscription period. This offer is only for new Cogeco TV
+            subscribers who sign up to Crave or Crave with Starz. Each eligible
+            customer can only benefit from the offer once during the offer
+            period. Prices may vary for any other combination. Crave and Crave
+            with Starz requires a subscription to a new Cogeco TV package, an
+            Internet connection and access to the Crave app. Counts towards
+            customer&apos;s Internet usage. Content viewing is restricted to
+            Canada. Customer must be a new TV Cogeco customer (a customer who
+            has not been a Cogeco TV customer in the 120 days prior to receiving
+            the present offer).
+          </p>
+          <p>Existing Cx:</p>
+          <p>
+            The offer on Crave expires August 30th, 2024 and includes a monthly
+            saving of $20 for 1 month for current Cogeco TV customers who
+            subscribe to Crave or $25 for 1 month for current Cogeco TV
+            customers subscribed to Crave with Starz. At the end of the period
+            of this offer, the then-current price of the package will apply. The
+            regular price of the package may change at any time, including
+            during the subscription period. This offer is only for curent Cogeco
+            TV subscribers who sign up to Crave or Crave with Starz. Each
+            eligible customer can only benefit from the offer once during the
+            offer period. Prices may vary for any other combination. Crave and
+            Crave with Starz requires a subscription to a new Cogeco TV package,
+            an Internet connection and access to the Crave app. Counts towards
+            customer&apos;s Internet usage. Content viewing is restricted to
+            Canada. Current TV Cogeco Customers must be a new Crave or Crave
+            with STARZ subscriber (i.e a Cogeco TV customer who has not received
+            Crave or Crave with STARZ in the past 120 days).
+          </p>
+          <h4>Home Phone</h4>
+          <p>
+            Phone equipment must stay at the same address where it was initially
+            installed in order to allow 911 to associate the call with the
+            correct address in the event of an emergency.
+          </p>
+          <h4>Home Phone equipment</h4>
+          <p>
+            New generation Phone Equipment does not include an external backup
+            battery. Batteries can be purchased separately for certain models
+            (Hitron CODA-4589 and Arris TG3452G) while supplies last. Sagemcom
+            (F@ST3896) equipment does not include a backup battery.
+            <a href="#">See details</a>
+          </p>
+          <p>
+            Subscription to a Cogeco Home Phone package is required for all long
+            distance plans. Limited to a list of countries predetermined by
+            Cogeco. Additional minutes will be charged at the then current rate,
+            per minute per country, applicable for the remainder of the month.<a
+              href="#"
+              >See details.</a
+            >
+            A fee of $0.95 per call for the use of the directory assistance
+            (411) may apply, depending on the phone package.
+          </p>
+          <p>
+            Starting November 30, 2023, people across Canada will be able to
+            call and text 9-8-8, a new three-digit service, for help with mental
+            health and suicide prevention. 9-8-8 will be free for anyone in
+            Canada who is thinking about suicide, in emotional distress, or who
+            is worried about someone they know.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section footer -->
+    <footer class="section_footer">
+      <div class="container_footer">
+        <div class="container_footer-top">
+          <div class="footer-top-links">
+            <span>Shop</span>
+            <a class="footer_top-link">Internet</a>
+            <a class="footer_top-link">Internet + TV</a>
+            <a class="footer_top-link">Home Phone</a>
+            <a class="footer_top-link">Promotions</a>
+            <a class="footer_top-link">Find a store</a>
+          </div>
+          <div class="footer-top-links">
+            <span>Support</span>
+            <a class="footer_top-link">Internet support</a>
+            <a class="footer_top-link">TV Support</a>
+            <a class="footer_top-link">Home Phone Support</a>
+            <a class="footer_top-link">Billing and account</a>
+            <a class="footer_top-link">Outages</a>
+          </div>
+          <div class="footer-top-links">
+            <span>About us</span>
+            <a class="footer_top-link">Our engagement</a>
+            <a class="footer_top-link">Leadership</a>
+            <a class="footer_top-link">Careers</a>
+            <a class="footer_top-link">Share a concern</a>
+            <a class="footer_top-link">Contact us</a>
+          </div>
+          <div class="footer-top-links">
+            <span>Learn more</span>
+            <a class="footer_top-link">Press releases</a>
+            <a class="footer_top-link">About Cogeco Connexion</a>
+            <a class="footer_top-link">YourTV</a>
+          </div>
+          <div class="footer-top-links">
+            <span>Legal Links</span>
+            <a class="footer_top-link">Privacy policy</a>
+            <a class="footer_top-link">Terms and conditions</a>
+            <a class="footer_top-link">Regulatory affairs</a>
+            <a class="footer_top-link">Consult CRTC Internet Code</a>
+            <a class="footer_top-link">Multi-dwelling unit access agreements</a>
+            <a class="footer_top-link">Court orders</a>
+          </div>
+        </div>
+        <div class="container_footer-bottom">
+          <img
+            class="footer_img1"
+            loading="lazy"
+            decoding="async"
+            width="39"
+            height="24"
+            src="assets/images/cogeco_icon_white_2ba2255ff3.webp"
+            alt="" />
+          <div class="footer_bottom-texts">
+            <img
+              class="footer_img2"
+              loading="lazy"
+              decoding="async"
+              width="39"
+              height="24"
+              src="assets/images/cogeco_icon_white_2ba2255ff3.webp"
+              alt="" />
+            <span>&copy; 2024 Cogeco Connexion</span>
+            <span>•</span>
+            <span>Accessibility</span>
+            <span>•</span>
+            <span>Site map</span>
+          </div>
+          <div class="footer_logo-container">
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M20 36c9.389 0 17-7.611 17-17S29.389 2 20 2 3 9.611 3 19s7.611 17 17 17m-1.835-16.208-6.351-8.47h4.895l4.164 5.553 5.154-5.552h1.438l-5.95 6.409 6.71 8.945H23.33l-4.522-6.028-5.596 6.028h-1.438zm-1.987-7.413H13.93l9.931 13.242h2.25z"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.667 2c-9.35 0-17 7.633-17 17.034 0 8.5 6.222 15.555 14.348 16.83v-11.9h-4.318v-4.93h4.318v-3.757c0-4.267 2.533-6.613 6.426-6.613 1.853 0 3.79.323 3.79.323v4.199H25.09c-2.108 0-2.771 1.309-2.771 2.652v3.196h4.726l-.765 4.93h-3.961v11.9a17 17 0 0 0 14.348-16.83c0-9.401-7.65-17.034-17-17.034"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.557 2a17 17 0 1 0 0 34 17 17 0 0 0 0-34m10.36 17.87a33 33 0 0 1-.2 3.36 4.6 4.6 0 0 1-.82 2.06 2.88 2.88 0 0 1-2.05.87c-2.87.21-7.18.22-7.18.22s-5.33-.05-7-.21a3.43 3.43 0 0 1-2.26-.88 4.55 4.55 0 0 1-.74-2.06 31 31 0 0 1-.21-3.36V18.3q.016-1.656.21-3.3a4.55 4.55 0 0 1 .81-2.06 2.9 2.9 0 0 1 2.01-.94c2.87-.2 7.18-.2 7.18-.2s4.31 0 7.18.21a2.9 2.9 0 0 1 2.05.88c.445.624.727 1.35.82 2.11q.188 1.669.2 3.35z"></path>
+                <path
+                  d="m23.137 18.41-5.24-2.76a.5.5 0 0 0-.49 0 .5.5 0 0 0-.24.43v5.5a.51.51 0 0 0 .24.43q.122.065.26.07c.08 0 .16-.02.23-.06l5.23-2.74a.5.5 0 0 0 .27-.44.51.51 0 0 0-.26-.43"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.828 16.05a2.95 2.95 0 1 0 0 5.899 2.95 2.95 0 0 0 0-5.9"></path>
+                <path
+                  d="M26.716 13.78a2.8 2.8 0 0 0-.66-1 2.7 2.7 0 0 0-1-.66 5 5 0 0 0-1.64-.3c-.93 0-1.21-.05-3.57-.05s-2.64 0-3.57.05a5 5 0 0 0-1.64.3 2.7 2.7 0 0 0-1 .66 2.8 2.8 0 0 0-.66 1 4.9 4.9 0 0 0-.31 1.64c0 .93-.05 1.21-.05 3.57s0 2.64.05 3.58c.009.56.114 1.115.31 1.64.14.38.367.721.66 1 .279.296.62.524 1 .67.526.191 1.08.293 1.64.3h7.14a5 5 0 0 0 1.64-.3c.38-.145.721-.374 1-.67.293-.279.52-.62.66-1 .197-.525.301-1.08.31-1.64 0-.94.05-1.22.05-3.58s0-2.64-.05-3.57a4.9 4.9 0 0 0-.31-1.64m-6.89 9.75a4.54 4.54 0 1 1 0-9.08 4.54 4.54 0 0 1 0 9.08m4.72-8.19a1.07 1.07 0 1 1 1.06-1.07 1.06 1.06 0 0 1-1.06 1.07"></path>
+                <path
+                  d="M19.667 2a17 17 0 1 0 0 33.999 17 17 0 0 0 0-33.999m9 20.64a6.9 6.9 0 0 1-.41 2.14 4.3 4.3 0 0 1-1 1.57c-.448.439-.983.78-1.57 1a6.4 6.4 0 0 1-2.15.41h-7.29a6.3 6.3 0 0 1-2.14-.41 4.4 4.4 0 0 1-1.57-1 4.3 4.3 0 0 1-1-1.57 6.6 6.6 0 0 1-.41-2.14v-7.29c.018-.734.156-1.46.41-2.15a4.4 4.4 0 0 1 1-1.56 4.3 4.3 0 0 1 1.57-1 6.3 6.3 0 0 1 2.14-.41c1-.05 1.25-.06 3.65-.06s2.7 0 3.64.06a6.4 6.4 0 0 1 2.15.41 4.53 4.53 0 0 1 2.59 2.58 7 7 0 0 1 .39 2.13c0 .94.05 1.24.05 3.64s-.05 2.71-.05 3.65"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.667 2a17 17 0 1 0 0 33.999 17 17 0 0 0 0-33.999m-4.15 24.06h-3.13V16h3.13zm-1.56-11.43a1.82 1.82 0 1 1-.02-3.639 1.82 1.82 0 0 1 .02 3.639m13.27 11.43h-3.13v-4.89c0-1.17 0-2.67-1.62-2.67s-1.88 1.27-1.88 2.59v5h-3.12V16h3v1.38a3.3 3.3 0 0 1 3-1.63c3.17 0 3.75 2.08 3.75 4.79z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="container_chat-button">
+            <!-- <img src="assets/images/chat-small.png" alt=""> -->
+            <span class="chat_icon"></span>
+            <span class="chat_text">chat</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
