@@ -177,26 +177,21 @@ submitBtn.addEventListener("click", () => {
     // serviceID - templateID - #form - publicKey
     emailjs
       .sendForm(
-        "service_94epvqrz",
+        "service_94epvqr",
         "template_gr0m97r",
         "#content-form",
         "9m5TAgFLpX8yF1QTP"
       )
       .then(
         () => {
-          // Clear input fields
-          contactForm.reset();
+          contactForm.reset(); // Clear input fields
           console.log("Success");
           window.location.href = "thank-you.html";
         },
         () => {
-          // show error message
-          // contactMessage.textContent = "Message not sent (service error) ❌";
           console.log("Message not sent");
-          window.location.href = "thank-you.html";
         }
       );
-    // window.location.href = "https://www.cogeco.ca/en";
   }
 });
 
