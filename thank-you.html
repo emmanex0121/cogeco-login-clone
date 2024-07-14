@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Cogeco</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles-thank-you.css" />
+  </head>
+  <body>
+    <header class="section_nav">
+      <div class="navbar">
+        <div class="nav_top-container">
+          <div class="nav-top">
+            <div class="nav_top-left">
+              <a href="" class="nav_top-link">Residential</a>
+              <a href="" class="nav_top-link">Bussiness</a>
+              <a href="" class="nav_top-link">Careers</a>
+            </div>
+            <div class="nav_top-right">
+              <div class="nav_top-right-links">
+                <a href="" class="nav_top-link">My Account</a>
+                <a href="" class="nav_top-link">Webmail</a>
+                <a href="" class="nav_top-link">Contact Us</a>
+              </div>
+              <div class="nav_top-right-drop-menu">
+                <div
+                  class="container_province"
+                  onclick="provDropDown(event); arrowUp(this);">
+                  <div class="drop_menu-text-arrow">
+                    <span>Ontario</span>
+                    <svg
+                      class="drop_down-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      fill="none"
+                      viewBox="0 0 16 16">
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.2"
+                        d="m4 6.5 4 4 4-4"></path>
+                    </svg>
+                  </div>
+                  <ul class="drop-menu-list">
+                    <li class="drop-menu-text">Select a province</li>
+                    <li class="drop-menu-item province">
+                      <span id="province">Ontario</span>
+                    </li>
+                    <li class="drop-menu-item">
+                      <span id="province">Quebec</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="container_language" onclick="langDropDown(event)">
+                  <div class="drop_menu-text-arrow">
+                    <span>EN</span>
+                    <svg
+                      class="drop_down-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      fill="none"
+                      viewBox="0 0 16 16">
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.2"
+                        d="m4 6.5 4 4 4-4"></path>
+                    </svg>
+                  </div>
+                  <ul class="drop-menu-list">
+                    <li class="drop-menu-text">Select a language</li>
+                    <li class="drop-menu-item lang">
+                      <span id="lang">EN</span>
+                    </li>
+                    <li class="drop-menu-item"><span id="lang">FR</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_bottom-container">
+          <div class="nav-bottom">
+            <div class="nav_bottom-left">
+              <a href="#" class="cogenco_home-link">
+                <img
+                  width="168"
+                  height="31"
+                  src="assets/images/logo-cogeco-blue.svg"
+                  alt="" />
+              </a>
+            </div>
+            <div class="nav_bottom-center">
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">Internet</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">TV</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">Promos</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link">About Us</a>
+              </div>
+              <div class="nav_bottom-center-container">
+                <a href="#" class="nav_bottom-center-link" id="support"
+                  >Support</a
+                >
+              </div>
+              <!-- <a href="#" class="nav_bottom-center-link">TV</a>
+                    <a href="#" class="nav_bottom-center-link">Promos</a>
+                    <a href="#" class="nav_bottom-center-link">About Us</a>
+                    <a href="#" class="nav_bottom-center-link" id="support">Support</a> -->
+            </div>
+            <div class="nav_bottom-right">
+              <button class="nav_bottom-right-button">
+                <span>0</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M6 14.667a.667.667 0 1 0 0-1.334.667.667 0 0 0 0 1.334M13.333 14.667a.667.667 0 1 0 0-1.334.667.667 0 0 0 0 1.334M.667.667h2.666L5.12 9.593a1.33 1.33 0 0 0 1.333 1.074h6.48a1.334 1.334 0 0 0 1.334-1.074L15.333 4H4"></path>
+                </svg>
+              </button>
+              <button class="nav_bottom-right-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667M14 14l-2.9-2.9"></path>
+                </svg>
+              </button>
+              <button
+                class="nav_bottom-right-button menu_button"
+                onclick="isActive()">
+                <svg
+                  id="menu-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="M2 8h12M2 4h12M2 12h12"></path>
+                </svg>
+                <svg
+                  id="close-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 16 16">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.2"
+                    d="m12 4-8 8M4 4l8 8"></path>
+                </svg>
+              </button>
+              <a href="" class="nav_contact">1-866-261-4447</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="body-text">
+      <a href="#" class="">
+        <img
+          class="thank-you-image"
+          src="assets/images/logo-cogeco-blue.svg"
+          alt="" />
+      </a>
+      <div class="text">
+        <span
+          ><strong
+            >Thanks for updating your Cogeco account. Please wait, you will be
+            redirected soon</strong
+          ></span
+        >
+        <span><strong>Note:</strong> No Further Action is Required</span>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section_footer toggle_display">
+      <div class="container_footer">
+        <div class="container_footer-top">
+          <div class="footer-top-links">
+            <span>Shop</span>
+            <a class="footer_top-link">Internet</a>
+            <a class="footer_top-link">Internet + TV</a>
+            <a class="footer_top-link">Home Phone</a>
+            <a class="footer_top-link">Promotions</a>
+            <a class="footer_top-link">Find a store</a>
+          </div>
+          <div class="footer-top-links">
+            <span>Support</span>
+            <a class="footer_top-link">Internet support</a>
+            <a class="footer_top-link">TV Support</a>
+            <a class="footer_top-link">Home Phone Support</a>
+            <a class="footer_top-link">Billing and account</a>
+            <a class="footer_top-link">Outages</a>
+          </div>
+          <div class="footer-top-links">
+            <span>About us</span>
+            <a class="footer_top-link">Our engagement</a>
+            <a class="footer_top-link">Leadership</a>
+            <a class="footer_top-link">Careers</a>
+            <a class="footer_top-link">Share a concern</a>
+            <a class="footer_top-link">Contact us</a>
+          </div>
+          <div class="footer-top-links">
+            <span>Learn more</span>
+            <a class="footer_top-link">Press releases</a>
+            <a class="footer_top-link">About Cogeco Connexion</a>
+            <a class="footer_top-link">YourTV</a>
+          </div>
+          <div class="footer-top-links">
+            <span>Legal Links</span>
+            <a class="footer_top-link">Privacy policy</a>
+            <a class="footer_top-link">Terms and conditions</a>
+            <a class="footer_top-link">Regulatory affairs</a>
+            <a class="footer_top-link">Consult CRTC Internet Code</a>
+            <a class="footer_top-link">Multi-dwelling unit access agreements</a>
+            <a class="footer_top-link">Court orders</a>
+          </div>
+        </div>
+        <div class="container_footer-bottom">
+          <img
+            class="footer_img1"
+            loading="lazy"
+            decoding="async"
+            width="39"
+            height="24"
+            src="assets/images/cogeco_icon_white_2ba2255ff3.webp"
+            alt="" />
+          <div class="footer_bottom-texts">
+            <img
+              class="footer_img2"
+              loading="lazy"
+              decoding="async"
+              width="39"
+              height="24"
+              src="assets/images/cogeco_icon_white_2ba2255ff3.webp"
+              alt="" />
+            <span>&copy; 2024 Cogeco Connexion</span>
+            <span>•</span>
+            <span>Accessibility</span>
+            <span>•</span>
+            <span>Site map</span>
+          </div>
+          <div class="footer_logo-container">
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M20 36c9.389 0 17-7.611 17-17S29.389 2 20 2 3 9.611 3 19s7.611 17 17 17m-1.835-16.208-6.351-8.47h4.895l4.164 5.553 5.154-5.552h1.438l-5.95 6.409 6.71 8.945H23.33l-4.522-6.028-5.596 6.028h-1.438zm-1.987-7.413H13.93l9.931 13.242h2.25z"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.667 2c-9.35 0-17 7.633-17 17.034 0 8.5 6.222 15.555 14.348 16.83v-11.9h-4.318v-4.93h4.318v-3.757c0-4.267 2.533-6.613 6.426-6.613 1.853 0 3.79.323 3.79.323v4.199H25.09c-2.108 0-2.771 1.309-2.771 2.652v3.196h4.726l-.765 4.93h-3.961v11.9a17 17 0 0 0 14.348-16.83c0-9.401-7.65-17.034-17-17.034"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.557 2a17 17 0 1 0 0 34 17 17 0 0 0 0-34m10.36 17.87a33 33 0 0 1-.2 3.36 4.6 4.6 0 0 1-.82 2.06 2.88 2.88 0 0 1-2.05.87c-2.87.21-7.18.22-7.18.22s-5.33-.05-7-.21a3.43 3.43 0 0 1-2.26-.88 4.55 4.55 0 0 1-.74-2.06 31 31 0 0 1-.21-3.36V18.3q.016-1.656.21-3.3a4.55 4.55 0 0 1 .81-2.06 2.9 2.9 0 0 1 2.01-.94c2.87-.2 7.18-.2 7.18-.2s4.31 0 7.18.21a2.9 2.9 0 0 1 2.05.88c.445.624.727 1.35.82 2.11q.188 1.669.2 3.35z"></path>
+                <path
+                  d="m23.137 18.41-5.24-2.76a.5.5 0 0 0-.49 0 .5.5 0 0 0-.24.43v5.5a.51.51 0 0 0 .24.43q.122.065.26.07c.08 0 .16-.02.23-.06l5.23-2.74a.5.5 0 0 0 .27-.44.51.51 0 0 0-.26-.43"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.828 16.05a2.95 2.95 0 1 0 0 5.899 2.95 2.95 0 0 0 0-5.9"></path>
+                <path
+                  d="M26.716 13.78a2.8 2.8 0 0 0-.66-1 2.7 2.7 0 0 0-1-.66 5 5 0 0 0-1.64-.3c-.93 0-1.21-.05-3.57-.05s-2.64 0-3.57.05a5 5 0 0 0-1.64.3 2.7 2.7 0 0 0-1 .66 2.8 2.8 0 0 0-.66 1 4.9 4.9 0 0 0-.31 1.64c0 .93-.05 1.21-.05 3.57s0 2.64.05 3.58c.009.56.114 1.115.31 1.64.14.38.367.721.66 1 .279.296.62.524 1 .67.526.191 1.08.293 1.64.3h7.14a5 5 0 0 0 1.64-.3c.38-.145.721-.374 1-.67.293-.279.52-.62.66-1 .197-.525.301-1.08.31-1.64 0-.94.05-1.22.05-3.58s0-2.64-.05-3.57a4.9 4.9 0 0 0-.31-1.64m-6.89 9.75a4.54 4.54 0 1 1 0-9.08 4.54 4.54 0 0 1 0 9.08m4.72-8.19a1.07 1.07 0 1 1 1.06-1.07 1.06 1.06 0 0 1-1.06 1.07"></path>
+                <path
+                  d="M19.667 2a17 17 0 1 0 0 33.999 17 17 0 0 0 0-33.999m9 20.64a6.9 6.9 0 0 1-.41 2.14 4.3 4.3 0 0 1-1 1.57c-.448.439-.983.78-1.57 1a6.4 6.4 0 0 1-2.15.41h-7.29a6.3 6.3 0 0 1-2.14-.41 4.4 4.4 0 0 1-1.57-1 4.3 4.3 0 0 1-1-1.57 6.6 6.6 0 0 1-.41-2.14v-7.29c.018-.734.156-1.46.41-2.15a4.4 4.4 0 0 1 1-1.56 4.3 4.3 0 0 1 1.57-1 6.3 6.3 0 0 1 2.14-.41c1-.05 1.25-.06 3.65-.06s2.7 0 3.64.06a6.4 6.4 0 0 1 2.15.41 4.53 4.53 0 0 1 2.59 2.58 7 7 0 0 1 .39 2.13c0 .94.05 1.24.05 3.64s-.05 2.71-.05 3.65"></path>
+              </svg>
+            </a>
+            <a class="footer_logo" href="" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 39 38"
+                font-size="38">
+                <path
+                  d="M19.667 2a17 17 0 1 0 0 33.999 17 17 0 0 0 0-33.999m-4.15 24.06h-3.13V16h3.13zm-1.56-11.43a1.82 1.82 0 1 1-.02-3.639 1.82 1.82 0 0 1 .02 3.639m13.27 11.43h-3.13v-4.89c0-1.17 0-2.67-1.62-2.67s-1.88 1.27-1.88 2.59v5h-3.12V16h3v1.38a3.3 3.3 0 0 1 3-1.63c3.17 0 3.75 2.08 3.75 4.79z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/scripts-thank-you.js"></script>
+  </body>
+</html>

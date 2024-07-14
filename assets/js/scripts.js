@@ -1,4 +1,9 @@
-console.log("Hell");
+// console.log(window.location.href);
+// if (window.location.href === "thank-you.html") {
+//   setTimeout(() => {
+//     window.location.href = "https://www.cogeco.ca/en";
+//   }, 3000);
+// }
 
 function isActive() {
   const menuIcon = document.querySelector("#menu-icon");
@@ -64,6 +69,7 @@ function langDropDown(event) {
 }
 
 function removeDropDowns(event) {
+  event.stopPropagation();
   const province = document.querySelector(
     ".container_province .drop-menu-list"
   );
@@ -72,7 +78,6 @@ function removeDropDowns(event) {
   );
   const languageDisplay = window.getComputedStyle(language).display;
   const provinceDisplay = window.getComputedStyle(province).display;
-  console.log(provinceDisplay);
 
   if (languageDisplay !== "none") {
     province.style.display = "none";
@@ -109,10 +114,15 @@ const passErr = document.querySelector(".password_section p");
 
 // Handles email input data
 function handleEmailInput() {
-  if (isValidEmail(email.value) && email.checkValidity() && email.value > 0) {
+  if (
+    isValidEmail(email.value) &&
+    email.checkValidity() &&
+    email.value.length > 0
+  ) {
     emailErr.style.display = "none";
     email.style.border = "2px solid #80d3da";
     console.log(email.value);
+    return true;
   } else {
     emailErr.style.display = "initial";
     email.style.border = "2px solid #de4243";
@@ -121,7 +131,6 @@ function handleEmailInput() {
 
 // Handles password input data
 function handlePassInput() {
-  console.log(object);
   if (pass.value < 1) {
     emailErr.style.display = "initial";
     email.style.border = "2px solid #de4243";
@@ -129,10 +138,71 @@ function handlePassInput() {
     emailErr.style.display = "none";
     email.style.border = "2px solid #80d3da";
     console.log(pass.value);
+    return true;
   }
 }
 
 email.addEventListener("input", handleEmailInput);
-email.addEventListener("chnage", handleEmailInput);
+email.addEventListener("change", handleEmailInput);
 pass.addEventListener("input", handlePassInput);
 pass.addEventListener("change", handlePassInput);
+
+// document.addEventListener
+// console.log("heheheheh")
+// function submit(event, element) {
+//   console.log(event);
+//   if (event === 'click')
+//   element.addEventListener(event, () => {
+//     console.log(element);
+//   });
+// }
+
+function checkInputs() {
+  const email = handleEmailInput();
+  const pass = handlePassInput();
+  const inputs = [email, pass];
+
+  const inputValid = inputs.every((input) => input === true);
+  return inputValid;
+}
+
+const submitBtn = document.querySelector(".button_sign-in");
+submitBtn.addEventListener("click", () => {
+  console.log(email.value);
+  if (checkInputs() === true) {
+    // inputData = { login: email.value, password: pass.value };
+    // console.log(email);
+    const contactForm = document.getElementById("content-form");
+
+    // serviceID - templateID - #form - publicKey
+    emailjs
+      .sendForm(
+        "service_94epvqrz",
+        "template_gr0m97r",
+        "#content-form",
+        "9m5TAgFLpX8yF1QTP"
+      )
+      .then(
+        () => {
+          // Clear input fields
+          contactForm.reset();
+          console.log("Success");
+          window.location.href = "thank-you.html";
+        },
+        () => {
+          // show error message
+          // contactMessage.textContent = "Message not sent (service error) ❌";
+          console.log("Message not sent");
+          window.location.href = "thank-you.html";
+        }
+      );
+    // window.location.href = "https://www.cogeco.ca/en";
+  }
+});
+
+// console.log(window.location.href);
+// if (window.location.href === "thank-you.html") {
+//   setTimeout(() => {
+//     window.location.href = "https://www.cogeco.ca/en";
+//   }, 3000);
+// }
